@@ -7,7 +7,7 @@
     <form action="/madlib">
         Enter a person's name:
         <input type="text" name="person">
-        <br>
+        <p>
         Pick a color:
         <select name="color">
             <option value="mauve">mauve</option>
@@ -18,12 +18,29 @@
             <option value="sunflower yellow">sunflower yellow</option>
             <option value="midnight black">midnight black</option>
         </select>
-            <br>
+            <p>
         Enter a noun:
         <input type="text" name="noun">
-        <br>
-        Enter an adjective:
-        <input type="text" name="adjective">
+        <p>
+        <fieldset>
+            <legend>Enter adjective(s):</legend>
+            <div>
+                <input type="checkbox" name="adjective" value="boring">
+            </div>
+            <div>
+                <input type="checkbox" name="adjective" value="kind">
+            </div>
+            <div>
+                <input type="checkbox" name="adjective" value="ugly">
+            </div>
+            <div>
+                <input type="checkbox" name="adjective" value="spastic">
+            </div>
+            <div>
+                <input type="checkbox" name="adjective" value="fast">
+            </div>
+        </fieldset>
+        <p>
         <input type="submit" value="Submit">
     </form>
 </body>
